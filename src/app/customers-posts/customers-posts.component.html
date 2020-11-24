@@ -1,0 +1,11 @@
+<p>
+  customers-posts works!
+
+</p>
+<div *ngFor="let post of _customerPostsList">
+  <ul *ngIf="post.userId == _requestParams.userId">
+    <li><strong>{{post.title}}</strong>
+      <ul>{{post.body}}</ul>
+    </li>
+  </ul>
+</div>

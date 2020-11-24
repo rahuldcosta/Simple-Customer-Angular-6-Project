@@ -1,0 +1,13 @@
+<p>
+  customers works!
+
+</p>
+<div *ngFor="let user of _domainCustomerList">
+  <ul>
+    <li><strong>{{user.id}}</strong>
+      <ul>{{user.userName}}</ul>
+      <ul class ="boom">{{user.website}}</ul>
+      <a href="post/{{user.id}}">My Posts</a>
+    </li>
+  </ul>
+</div>
